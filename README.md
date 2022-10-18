@@ -1,5 +1,5 @@
 # Calculator 
 
-## looking like Iphone Calculator
+## Functional looking like Iphone calculator
 
 ![preview](./img/calculator.jpg)

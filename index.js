@@ -43,7 +43,7 @@ operand_btns.forEach((btn) => {
             output.value = e.target.value;
             change_clear_btn_AC();
         } else if (output.value.includes(".")) {
-            // dot_btn.value = ",";
+            dot_btn.value = ",";
             output.value = output.value + "" + e.target.value
         } else if (is_operator) {
             is_operator = false;
@@ -61,6 +61,8 @@ operator_btns.forEach((btn) => {
         e.currentTarget.classList.add("active");
 
         switch (e.target.value) {
+            case e.target.value.length > 8:
+                break;
             case "%":
                 output.value = parseFloat(output.value) / 100;
                 break;
